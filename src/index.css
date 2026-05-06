@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.panel {
+  @apply rounded-xl bg-white p-4 shadow-panel;
+}
+
+.table-cell {
+  @apply border-b border-slate-100 px-3 py-2 text-sm;
+}

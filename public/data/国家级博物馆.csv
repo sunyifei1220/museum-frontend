@@ -1,0 +1,10 @@
+﻿博物馆名称,定级,省份,城市,经纬度,地址,联系方式,官网链接,数字藏品链接,数据获取方式,是否需要授权,博物馆分类
+故宫博物院,国家一级博物馆,北京,北京,"39.9163,116.3972",北京市东城区景山前街4号故宫博物院,400-950-1925,https://www.dpm.org.cn/,https://digicol.dpm.org.cn/, 图片可爬取, 高清图片视频需授权,综合类;历史类;艺术类
+上海博物馆,国家一级博物馆,上海,上海,"31.2305,121.4740",上海市黄浦区人民大道201号,+86-(0)21-63723500,https://www.shanghaimuseum.net/mu/frontend/pg/infomation/about, https://www.shanghaimuseum.net/mu/frontend/pg/lib1/index,图片可爬取, 未明确,综合类;历史类;艺术类
+南京博物院,国家一级博物馆,江苏,南京,"32.0418,118.8480",南京市中山东路321号,025-84807923,https://www.njmuseum.com/,https://www.njmuseum.com/zh/collectionIndex,图片可爬取,未公开明确,综合类;历史类;艺术类
+湖南博物馆,国家一级博物馆,湖南,长沙,"28.2075,112.9869",中国湖南省长沙市东风路50号,0731-84415833;0731-84475933;0731-84514630,https://www.hnmuseum.com/,de.hnmuseum.com/collection/,图片可爬取,未公开明确,综合类;历史类
+河南博物院,国家一级博物馆,河南,郑州,"34.7876,113.6500",中国·河南省郑州市农业路8号,0371-65393166;0371-65393188,https://www.chnmus.net/,https://www.chnmus.net/ch/collection/treasure/index.html,图片可爬取,未公开明确但有文创IP授权,综合类;历史类
+陕西历史博物馆,国家一级博物馆,陕西,西安,"34.2236,108.9608",中国·陕西·西安市小寨东路91号,4000293806;029-85253806,https://www.sxhm.com/,https://www.sxhm.com/collection.html,图片可爬取 有文物数据（excel)可下载但不包含藏品名称,未公开明确,历史类
+湖北省博物馆,国家一级博物馆,湖北,武汉,"30.5536,114.3678",武汉市武昌区东湖路160号,027-86716789,https://www.hbww.org.cn/, https://m-hbsbwg.cjyun.org/diancang/index.html,图片可爬取,未公开明确,综合类;历史类
+浙江省博物馆（浙江革命历史纪念馆）,国家一级博物馆,浙江,杭州,"30.2761,120.1536",杭州西湖文化广场E区,0571-85391628,https://www.zhejiangmuseum.com/,https://www.zhejiangmuseum.com/cn/#/Collection,图片可爬取,未公开明确,综合类;历史类;纪念馆类
+辽宁省博物馆,国家一级博物馆,辽宁,沈阳,"41.7419,123.4589",辽宁省沈阳市浑南区智慧三街157号,024-23205102-5100,https://www.lnmuseum.com.cn/,https://www.lnmuseum.com.cn/#/collect/digital-culture,图片可爬取,未公开明确,综合类;历史类;艺术类
