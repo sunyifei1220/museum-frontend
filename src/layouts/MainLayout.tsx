@@ -1,7 +1,8 @@
 import { NavLink, Outlet } from 'react-router-dom';
 
 const navItems = [
-  { label: '总览与列表', to: '/' },
+  { label: '可视化总览', to: '/' },
+  { label: '博物馆列表', to: '/museums' },
   { label: '国家级馆地图', to: '/national-map' },
   { label: '国家级馆关系视图', to: '/national-graph' },
 ];
