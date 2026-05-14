@@ -24,6 +24,12 @@ const toNumber = (raw: string) => {
   const n = Number(String(raw || '').replace(/,/g, '').trim());
   return Number.isFinite(n) ? n : 0;
 };
+
+const normalizeProvince = (raw: string) => {
+  const p = (raw || '').trim();
+  if (p.includes('新疆维吾尔自治区') || p.includes('新疆生产建设兵团')) return '新疆';
+  return p.replace('省', '').trim();
+};
 const parseCsv = async <T = Record<string, string>>(url: string): Promise<T[]> => {
   const text = await fetch(url).then((r) => r.text());
   return Papa.parse<T>(text, { header: true, skipEmptyLines: true }).data;
@@ -75,7 +81,7 @@ export const loadMuseumData = async () => {
     name: r['博物馆名称']?.trim() || `全国馆-${i + 1}`,
     level: toLevel(r['质量等级']),
     nature: toNature(r['性质']),
-    province: (r['省份'] || '').replace('省', '').trim(),
+    province: normalizeProvince(r['省份'] || ''),
     isFreeOpen: toFree(r['是否免费开放']),
     collectionsCount: toNumber(r['藏品数（件/套）']),
     preciousRelicsCount: toNumber(r['珍贵文物（件/套）']),
@@ -95,7 +101,7 @@ export const loadMuseumData = async () => {
       name,
       level: toLevel(r['定级']),
       nature: fromAll?.nature || '未明确',
-      province: (r['省份'] || '').replace('省', '').trim(),
+      province: normalizeProvince(r['省份'] || ''),
       address: (r['地址'] || '').trim(),
       isFreeOpen: fromAll?.isFreeOpen || '部分',
       collectionsCount: fromAll?.collectionsCount || 0,
@@ -114,7 +120,7 @@ export const loadMuseumData = async () => {
     level: toLevel(r['定级']),
     nature: '国有',
     museumType: normalizeType((r['博物馆分类'] || '').split(';')[0]),
-    province: (r['省份'] || '').replace('省', '').trim(),
+    province: normalizeProvince(r['省份'] || ''),
     city: (r['城市'] || '').trim(),
     address: (r['地址'] || '').trim(),
     coordinates: parseLngLat(r['经纬度'] || ''),
